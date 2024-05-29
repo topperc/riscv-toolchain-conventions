@@ -412,6 +412,15 @@ Control the code generation for scalar memory access with strict alignment (also
 
 NOTE: The compiler may generate misaligned access if the program violates the alignment assumption.
 
+
+### `-mscalar-strict-align`/`-mno-scalar-strict-align`
+
+Aliases for -mstrict-align/-mno-strict-align.
+
+### `-mvector-strict-align`/`-mno-vector-strict-align`
+
+Similar to -mstrict-align/-mno-strict-align but applied to vector memory access.
+
 ## TODO
 
 * `-mdiv`, `-mno-div`, `-mfdiv`, `-mno-fdiv`, `-msave-restore`,
