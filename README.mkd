@@ -400,11 +400,22 @@ specification, and in the draft [CORE-V Builtin
 Function](https://github.com/openhwgroup/core-v-sw/blob/master/specifications/corev-builtin-spec.md)
 specification.
 
+## Common Toolchain Command Line Options
+
+This section lists common RISC-V specific toolchain command line options.
+
+### `-mstrict-align`/`-mno-strict-align`
+Control the code generation for scalar memory access with strict alignment (also known as unaligned access or misaligned access).
+
+`-mstrict-align`: The compiler disallows misaligned access for scalar memory access.
+`-mno-strict-align`: The compiler allows misaligned access for scalar memory access.
+
+NOTE: The compiler may generate misaligned access if the program violates the alignment assumption.
+
 ## TODO
 
-* `-mdiv`, `-mno-div`, `-mfdiv`, `-mno-fdiv`, `-msave-restore`, 
-  `-mno-save-restore`, `-mstrict-align`, `-mno-strict-align`, 
-  `-mexplicit-relocs`, `-mno-explicit-relocs`
+* `-mdiv`, `-mno-div`, `-mfdiv`, `-mno-fdiv`, `-msave-restore`,
+  `-mno-save-restore`, `-mexplicit-relocs`, `-mno-explicit-relocs`
 
 ## Appendix: Exposing a vendor-specific extension across the toolchain
 
